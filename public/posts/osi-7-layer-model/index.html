@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1" />
+  
+  <meta name="description" content="The Open System Interconnection (OSI) model (defined in ISO 7498-1), which is a reference tool for understanding data communications between two networked systems, divides the communication processes into 7 layers:
+ Physical layer Data link layer Network layer Transport layer Session layer Presentation layer Application layer  Those layers break up the networks into manageable pioeces, which provides a common language to explain components and their functionalities. Here this article will give an overview of the 7 layers top-to-down.">
+  
+  <meta property="og:title" content="OSI 7-Layer Model" />
+<meta property="og:description" content="The Open System Interconnection (OSI) model (defined in ISO 7498-1), which is a reference tool for understanding data communications between two networked systems, divides the communication processes into 7 layers:
+ Physical layer Data link layer Network layer Transport layer Session layer Presentation layer Application layer  Those layers break up the networks into manageable pioeces, which provides a common language to explain components and their functionalities. Here this article will give an overview of the 7 layers top-to-down." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://xiangyi.pro/posts/osi-7-layer-model/" />
+<meta property="article:published_time" content="2020-09-10T10:29:19+00:00" />
+<meta property="article:modified_time" content="2020-09-10T10:29:19+00:00" />
+
+
+  <title>
+  
+       OSI 7-Layer Model | Xiangyi&#39;s Blog 
+  
+  </title>
+
+  <link rel="canonical" href="http://xiangyi.pro/posts/osi-7-layer-model/">
+
+  
+  
+
+  
+  <link href="http://xiangyi.pro/css/vendors-extensions/fontawesome/all.min.css" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:300,400,500,600">
+  <link href="http://xiangyi.pro/css/font.css" rel="stylesheet"> 
+    
+  
+  <link href="http://xiangyi.pro/css/vendors/bootstrap4/bootstrap.min.css" rel="stylesheet">
+  <link href="http://xiangyi.pro/css/vendors-extensions/mdb/mdb.min.css" rel="stylesheet"> 
+  <link href="http://xiangyi.pro/css/vendors/mdb/style.min.css" rel="stylesheet"> 
+  <link href="http://xiangyi.pro/css/main.css" rel="stylesheet">
+
+
+  
+  <link rel="shortcut icon"
+  
+  >
+
+
+  
+  
+
+  <style type="text/css">
+      @media (min-width: 800px) and (max-width: 850px) {
+              .navbar:not(.top-nav-collapse) {
+                  background: #1C2331!important;
+              }
+          }
+  </style>
+
+
+  
+  
+  
+
+  
+  
+
+</head>
+
+  <body class="bg-light" data-spy="scroll" data-target="#page-scrollspy" data-offset="90">
+  
+    
+    
+
+    
+      
+
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
+
+      
+      <a class="navbar-brand" href="http://xiangyi.pro/">
+          
+        <strong> </strong>
+      </a>
+
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        
+        <ul class="navbar-nav mr-auto ">
+          <li class="nav-item ">
+            <a class="nav-link" href="http://xiangyi.pro/">Home</a>
+          </li>
+          
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+  
+ 
+      
+ 
+
+
+
+
+
+
+<div id="site-header" class="carousel slide carousel-fade" data-ride="carousel" style="height: 18rem;" >  
+
+  
+  
+  
+
+  
+  <div class="carousel-inner" role="listbox">
+    
+      
+
+        
+        <div class="carousel-item active">
+          <div class="view" style="background-image: url('http://xiangyi.pro/img/header-slides/raw_1515691746.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+              
+              
+              
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+      
+
+        
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('http://xiangyi.pro/img/header-slides//raw_1515847341.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+
+  
+  </div>
+  
+
+  
+  <div class="carousel-content text-center white-text wow fadeIn">
+    <div class="row mx-0 headfont mt-3 pt-4">
+      
+      <div class="col-12 col-sm-5 align-middle">
+        <a href="http://xiangyi.pro/">
+          
+        </a>
+      </div>
+      
+      <div class="col-12 col-sm-7 text-left pl-2">
+        <a href="http://xiangyi.pro/">
+          <h1 class="mb-2 h1" style="font-weight: 300;" >
+            <strong>Xiangyi&#39;s Blog</strong>
+          </h1>
+        </a>
+        
+
+             
+        <div class="mt-2" style="font-size: 1rem; color: white;">
+            
+            
+
+            
+
+            
+
+            
+
+            
+    
+            
+    
+        
+            
+    
+            
+
+            
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  
+  
+  
+
+</div>
+  
+    
+
+    
+  
+  <main class="post-main-wrapper">
+    
+    
+    <div class="row">
+
+      
+
+      
+      <div class="container pr-5">
+      
+
+        
+        <div class="z-depth-1  post-wrapper white-bg single-post">
+
+          <div class="post-header text-center" >
+  <ul class="post-meta li-x">
+    
+    
+  </ul>
+
+  <div class="px-4 post-heading">OSI 7-Layer Model</div>
+
+  <ul class="post-meta li-x mt-1">
+    
+      <li>Sep 10, 2020</li>
+    
+
+    
+      <li class="middot"></li>
+      <li>3 minutes read</li>
+    
+  </ul>
+  
+
+</div>
+
+
+          <div class="post-content markdown">
+            <p>The Open System Interconnection (OSI) model (defined in <a href="https://www.iso.org/standard/20269.html">ISO 7498-1</a>), which is a reference tool for understanding data communications between two networked systems, divides the communication processes into 7 layers:</p>
+<ol>
+<li>Physical layer</li>
+<li>Data link layer</li>
+<li>Network layer</li>
+<li>Transport layer</li>
+<li>Session layer</li>
+<li>Presentation layer</li>
+<li>Application layer</li>
+</ol>
+<p>Those layers break up the networks into manageable pioeces, which provides a common language to explain components and their functionalities. Here this article will give an overview of the 7 layers top-to-down.</p>
+<h2 id="layer-7-the-application-layer">Layer 7: The Application Layer</h2>
+<p>OSI Model, Layer 7, supports application and end-user processes. Communication partners are identified, quality of service is identified, user authentication and privacy are considered, and any constraints on data syntax are identified. Everything at this layer is application-specific. This layer provides application services for file transfers, e-mail, and other network software services. Telnet and FTP are applications that exist entirely in the application level. Tiered application architectures are part of this layer.</p>
+<h2 id="layer-6-the-presentation-layer">Layer 6: The Presentation Layer</h2>
+<p>This layer provides independence from differences in data representation (e.g., encryption) by translating from application to network format, and vice versa. The presentation layer works to transform data into the form that the application layer can accept. This layer formats and encrypts data to be sent across a network, providing freedom from compatibility problems. It is sometimes called the syntax layer.</p>
+<h2 id="layer-5-the-session-layer">Layer 5: The Session Layer</h2>
+<p>This layer establishes, manages and terminates connections between applications. The session layer sets up, coordinates, and terminates conversations, exchanges, and dialogues between the applications at each end. It deals with session and connection coordination.</p>
+<h2 id="layer-4-the-transport-layer">Layer 4: The Transport Layer</h2>
+<p>Layer 4 provides transparent transfer of data between end systems, or hosts, and is responsible for end-to-end error recovery and flow control. It ensures reliable data transfer.</p>
+<h2 id="layer-3-the-network-layer">Layer 3: The Network Layer</h2>
+<p>The network layer provides switching and routing technologies, creating logical paths, known as virtual circuits, for transmitting data from node to node. Routing and forwarding are functions of this layer, as well as addressing, internetworking, error handling, congestion control and packet sequencing.</p>
+<h2 id="layer-2-the-data-link-layer">Layer 2: The Data Link Layer</h2>
+<p>This layer provides node-to-node data transfer (between two directly connected nodes), and also handles error correction from the physical layer. Here data packets are encoded and decoded into bits. In this layer, data packets have a unique name: frames. And it&rsquo;s divided into 2 sub-layers: the Media Control Access (MAC) layer and the Logical Link Control (LLC) layer. The MAC sub layer controls how a computer on the network gains access to the data and permission to transmit it. The LLC layer controls frame synchronization, flow control and error checking.</p>
+<h2 id="layer-1-the-physical-layer">Layer 1: The Physical Layer</h2>
+<p>The physical layer defines specifications of connector and interface, as well as the medium (cable) requirements. Electrical, mechanical, functional, and procedural specifications are provided for sending a bit stream on a computer network.</p>
+
+          </div>
+
+          
+          <div class="row">
+            <div class="col-md-8">
+            
+            </div>
+            
+          </div>
+          
+
+          
+          <div class="row pt-3">
+            <div class="col-md-6">
+              
+                <a href=http://xiangyi.pro/posts/oh-my-posh/ class="post-meta">Previous
+                  <div class="pt-2 pb-5 d-flex">
+                    <i class="fas fa-angle-left text-grey font-weight-bold mr-2 active-color"></i>
+                    <span>Config oh-my-posh on Windows 10</span>
+                  </div>
+                </a>
+              
+            </div>
+            
+            <div class="col-md-6 text-right" >
+              
+            </div>
+          </div>
+
+          
+
+        </div>
+        
+
+      </div>
+      
+
+      
+
+    </div>
+    
+
+
+  </main>
+  
+
+
+    
+    
+
+<footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+
+  
+  <div class="pb-2 mt-5 pt-5">
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+    
+
+  </div>
+  
+
+  
+  <div class="copyright py-4">
+    
+    <span>  2016 - 2020 &copy; | Theme <a href='https://github.com/orianna-zzo/AllinOne' target="_blank">AllinOne</a> by <a href='https://github.com/orianna-zzo' target="_blank">Orianna</a>  </span>
+  </div>
+  
+
+</footer>
+
+
+    
+
+
+
+
+
+
+<script type="text/javascript" src="http://xiangyi.pro/js/vendors/jquery/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="http://xiangyi.pro/js/vendors/jquery/jquery.smooth-scroll.min.js"></script>
+
+
+
+<script type="text/javascript" src="http://xiangyi.pro/js/vendors/popper.min.js"></script>
+<script type="text/javascript" src="http://xiangyi.pro/js/vendors/holder.min.js"></script>
+<script type="text/javascript" src="http://xiangyi.pro/js/vendors-extensions/bootstrap4/bootstrap.js" ></script>
+
+<script type="text/javascript" src="http://xiangyi.pro/js/vendors/mdb/mdb.min.js"></script>
+
+<script type="text/javascript" src="http://xiangyi.pro/js/main.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  
+  new WOW().init();
+</script>
+
+
+
+
+  </body>
+</html>

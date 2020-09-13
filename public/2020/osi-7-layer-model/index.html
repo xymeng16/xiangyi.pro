@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  
+  
+  
+  
+  
+  <link rel="prev" href="http://xiangyi.pro/2020/oh-my-posh/" />
+  
+  <link rel="canonical" href="http://xiangyi.pro/2020/osi-7-layer-model/" />
+  <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           OSI 7-Layer Model | Xiangyi&#39;s Blog
+       
+  </title>
+  <meta name="title" content="OSI 7-Layer Model | Xiangyi&#39;s Blog">
+    
+  
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.scss">
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="OSI 7-Layer Model"/>
+<meta name="twitter:description" content="The Open System Interconnection (OSI) model (defined in ISO 7498-1), which is a reference tool for understanding data communications between two networked systems, divides the communication processes into 7 layers:
+ Physical layer Data link layer Network layer Transport layer Session layer Presentation layer Application layer  Those layers break up the networks into manageable pioeces, which provides a common language to explain components and their functionalities. Here this article will give an overview of the 7 layers top-to-down."/>
+
+  <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "OSI 7-Layer Model",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http:\/\/xiangyi.pro\/2020\/osi-7-layer-model\/"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "http:\/\/xiangyi.pro\/cover.png",
+    "width":  800 ,
+    "height":  600 
+  },
+  "genre": "posts",
+  
+  "wordcount":  472 ,
+  "url": "http:\/\/xiangyi.pro\/2020\/osi-7-layer-model\/",
+  "datePublished": "2020-09-10T10:29:19\u002b00:00",
+  "dateModified": "2020-09-10T10:29:19\u002b00:00",
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Xiangyi Meng",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http:\/\/xiangyi.pro\/logo.png",
+      "width":  127 ,
+      "height":  40 
+    }
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Xiangyi Meng"
+  },
+  "description": ""
+}
+</script>
+</head>
+
+  
+
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="http://xiangyi.pro/">Xiangyi&#39;s Blog</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/about" title="">About</a>
+                
+                <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-sun"></i></a>&nbsp;
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-sun"></i></a>&nbsp;<a href="http://xiangyi.pro/">Xiangyi&#39;s Blog</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/about" title="">About</a>
+                
+        </div>
+    </div>
+</nav>
+
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp">
+    <header class="post-header">
+        <h1 class="post-title">OSI 7-Layer Model</h1>
+        <div class="post-meta">
+            Written by <a href="http://xiangyi.pro/" rel="author">Xiangyi Meng</a> with ♥ 
+                <span class="post-time">
+                    on <time datetime=2020-09-10 >10 September 2020</time>
+                </span>
+                in
+                
+                <i class="iconfont icon-timer"></i>
+                3 min
+        </div>
+    </header>
+    <div class="post-content">
+        
+
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          <p>The Open System Interconnection (OSI) model (defined in <a href="https://www.iso.org/standard/20269.html">ISO 7498-1</a>), which is a reference tool for understanding data communications between two networked systems, divides the communication processes into 7 layers:</p>
+<ol>
+<li>Physical layer</li>
+<li>Data link layer</li>
+<li>Network layer</li>
+<li>Transport layer</li>
+<li>Session layer</li>
+<li>Presentation layer</li>
+<li>Application layer</li>
+</ol>
+<p>Those layers break up the networks into manageable pioeces, which provides a common language to explain components and their functionalities. Here this article will give an overview of the 7 layers top-to-down.</p>
+<h2 id="layer-7-the-application-layer">Layer 7: The Application Layer</h2>
+<p>OSI Model, Layer 7, supports application and end-user processes. Communication partners are identified, quality of service is identified, user authentication and privacy are considered, and any constraints on data syntax are identified. Everything at this layer is application-specific. This layer provides application services for file transfers, e-mail, and other network software services. Telnet and FTP are applications that exist entirely in the application level. Tiered application architectures are part of this layer.</p>
+<h2 id="layer-6-the-presentation-layer">Layer 6: The Presentation Layer</h2>
+<p>This layer provides independence from differences in data representation (e.g., encryption) by translating from application to network format, and vice versa. The presentation layer works to transform data into the form that the application layer can accept. This layer formats and encrypts data to be sent across a network, providing freedom from compatibility problems. It is sometimes called the syntax layer.</p>
+<h2 id="layer-5-the-session-layer">Layer 5: The Session Layer</h2>
+<p>This layer establishes, manages and terminates connections between applications. The session layer sets up, coordinates, and terminates conversations, exchanges, and dialogues between the applications at each end. It deals with session and connection coordination.</p>
+<h2 id="layer-4-the-transport-layer">Layer 4: The Transport Layer</h2>
+<p>Layer 4 provides transparent transfer of data between end systems, or hosts, and is responsible for end-to-end error recovery and flow control. It ensures reliable data transfer.</p>
+<h2 id="layer-3-the-network-layer">Layer 3: The Network Layer</h2>
+<p>The network layer provides switching and routing technologies, creating logical paths, known as virtual circuits, for transmitting data from node to node. Routing and forwarding are functions of this layer, as well as addressing, internetworking, error handling, congestion control and packet sequencing.</p>
+<h2 id="layer-2-the-data-link-layer">Layer 2: The Data Link Layer</h2>
+<p>This layer provides node-to-node data transfer (between two directly connected nodes), and also handles error correction from the physical layer. Here data packets are encoded and decoded into bits. In this layer, data packets have a unique name: frames. And it&rsquo;s divided into 2 sub-layers: the Media Control Access (MAC) layer and the Logical Link Control (LLC) layer. The MAC sub layer controls how a computer on the network gains access to the data and permission to transmit it. The LLC layer controls frame synchronization, flow control and error checking.</p>
+<h2 id="layer-1-the-physical-layer">Layer 1: The Physical Layer</h2>
+<p>The physical layer defines specifications of connector and interface, as well as the medium (cable) requirements. Electrical, mechanical, functional, and procedural specifications are provided for sending a bit stream on a computer network.</p>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>Xiangyi Meng </span>
+                </p>
+            
+           
+            <p class="copyright-item">
+                    <span>Words:</span>
+                   <span>472</span>
+            </p>
+            
+            <p class="copyright-item">
+                
+                <span>Share:</span>
+                <span>
+
+      
+        <a href="//twitter.com/share?url=http%3a%2f%2fxiangyi.pro%2f2020%2fosi-7-layer-model%2f&amp;text=OSI%207-Layer%20Model&amp;via=" target="_blank" title="Share on Twitter">
+          <i class="iconfont icon-twitter"></i>
+        </a>
+        
+      
+      
+        <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fxiangyi.pro%2f2020%2fosi-7-layer-model%2f" target="_blank" title="Share on Facebook">
+          <i class="iconfont icon-facebook"></i>
+        </a>
+        
+      
+      
+      
+      
+        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fxiangyi.pro%2f2020%2fosi-7-layer-model%2f&amp;title=OSI%207-Layer%20Model" target="_blank" title="Share on LinkedIn">
+          <i class="iconfont icon-linkedin"></i>
+        </a>
+        
+      
+      
+        
+      
+        
+      
+
+          
+
+          
+
+          
+
+          
+</span>
+                
+            </p>
+
+             
+            <p class="copyright-item">
+                Released under <a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>
+            </p>
+            
+    </div>
+
+  
+    <div class="post-tags">
+        
+        <section>
+                <a href="javascript:window.history.back();">Back</a></span> · 
+                <span><a href="http://xiangyi.pro/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="http://xiangyi.pro/2020/oh-my-posh/" class="prev" rel="prev" title="Config oh-my-posh on Windows 10"><i class="iconfont icon-dajiantou"></i>&nbsp;Config oh-my-posh on Windows 10</a>
+         
+        
+    </div>
+
+    <div class="post-comment">
+          
+          <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      (function() {
+          
+          
+          if (window.location.hostname == "localhost")
+              return;
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          var disqus_shortname = 'yourdiscussshortname';
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="https://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+ 
+
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2012 - 2020</span>
+        
+         
+            <span class="author" itemprop="copyrightHolder"><a href="http://xiangyi.pro/">Xiangyi Meng</a> | </span>
+         
+
+		  <span>Crafted with ❤️ by <a href="https://github.com/Fastbyte01/KeepIt" target="_blank" rel="external nofollow noopener noreffer">KeepIt</a> & <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreffer">Hugo</a></span>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    <script src="/js/vendor_no_gallery.min.js" async=""></script>
+    
+  
+
+
+
+
+
+
+
+     </div>
+  </body>
+</html>

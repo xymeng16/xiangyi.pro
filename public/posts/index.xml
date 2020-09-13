@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Xiangyi&#39;s Blog</title>
+    <link>http://xiangyi.pro/posts/</link>
+    <description>Recent content in Posts on Xiangyi&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 10 Sep 2020 10:29:19 +0000</lastBuildDate>
+    
+	<atom:link href="http://xiangyi.pro/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>OSI 7-Layer Model</title>
+      <link>http://xiangyi.pro/2020/osi-7-layer-model/</link>
+      <pubDate>Thu, 10 Sep 2020 10:29:19 +0000</pubDate>
+      
+      <guid>http://xiangyi.pro/2020/osi-7-layer-model/</guid>
+      <description>The Open System Interconnection (OSI) model (defined in ISO 7498-1), which is a reference tool for understanding data communications between two networked systems, divides the communication processes into 7 layers:
+ Physical layer Data link layer Network layer Transport layer Session layer Presentation layer Application layer  Those layers break up the networks into manageable pioeces, which provides a common language to explain components and their functionalities. Here this article will give an overview of the 7 layers top-to-down.</description>
+    </item>
+    
+    <item>
+      <title>Config oh-my-posh on Windows 10</title>
+      <link>http://xiangyi.pro/2020/oh-my-posh/</link>
+      <pubDate>Tue, 08 Sep 2020 07:05:30 +0000</pubDate>
+      
+      <guid>http://xiangyi.pro/2020/oh-my-posh/</guid>
+      <description>oh-my-posh, as an alternative of oh-my-zsh in *nix-based system, is a beautiful theme engine for Powershell in Windows Terminal.
+Prerequisites  Windows Terminal Git Powerline fonts (at least one font is needed to be installed)  Installation Using the following commands to install the oh-my-posh in your Windows Terminal:
+Install-Module posh-git -Scope CurrentUser Install-Module oh-my-posh -Scope CurrentUser Now the oh-my-posh is successfully installed on your computer, the following commands are used to enable the prompt:</description>
+    </item>
+    
+  </channel>
+</rss>

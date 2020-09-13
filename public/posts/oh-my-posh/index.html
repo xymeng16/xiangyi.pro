@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1" />
+  
+  <meta name="description" content="oh-my-posh, as an alternative of oh-my-zsh in *nix-based system, is a beautiful theme engine for Powershell in Windows Terminal.
+Prerequisites  Windows Terminal Git Powerline fonts (at least one font is needed to be installed)  Installation Using the following commands to install the oh-my-posh in your Windows Terminal:
+Install-Module posh-git -Scope CurrentUser Install-Module oh-my-posh -Scope CurrentUser Now the oh-my-posh is successfully installed on your computer, the following commands are used to enable the prompt:">
+  
+  <meta property="og:title" content="Config oh-my-posh on Windows 10" />
+<meta property="og:description" content="oh-my-posh, as an alternative of oh-my-zsh in *nix-based system, is a beautiful theme engine for Powershell in Windows Terminal.
+Prerequisites  Windows Terminal Git Powerline fonts (at least one font is needed to be installed)  Installation Using the following commands to install the oh-my-posh in your Windows Terminal:
+Install-Module posh-git -Scope CurrentUser Install-Module oh-my-posh -Scope CurrentUser Now the oh-my-posh is successfully installed on your computer, the following commands are used to enable the prompt:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://xiangyi.pro/posts/oh-my-posh/" />
+<meta property="article:published_time" content="2020-09-08T07:05:30+00:00" />
+<meta property="article:modified_time" content="2020-09-08T07:05:30+00:00" />
+
+
+  <title>
+  
+       Config oh-my-posh on Windows 10 | Xiangyi&#39;s Blog 
+  
+  </title>
+
+  <link rel="canonical" href="http://xiangyi.pro/posts/oh-my-posh/">
+
+  
+  
+
+  
+  <link href="http://xiangyi.pro/css/vendors-extensions/fontawesome/all.min.css" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:300,400,500,600">
+  <link href="http://xiangyi.pro/css/font.css" rel="stylesheet"> 
+    
+  
+  <link href="http://xiangyi.pro/css/vendors/bootstrap4/bootstrap.min.css" rel="stylesheet">
+  <link href="http://xiangyi.pro/css/vendors-extensions/mdb/mdb.min.css" rel="stylesheet"> 
+  <link href="http://xiangyi.pro/css/vendors/mdb/style.min.css" rel="stylesheet"> 
+  <link href="http://xiangyi.pro/css/main.css" rel="stylesheet">
+
+
+  
+  <link rel="shortcut icon"
+  
+  >
+
+
+  
+  
+
+  <style type="text/css">
+      @media (min-width: 800px) and (max-width: 850px) {
+              .navbar:not(.top-nav-collapse) {
+                  background: #1C2331!important;
+              }
+          }
+  </style>
+
+
+  
+  
+  
+
+  
+  
+
+</head>
+
+  <body class="bg-light" data-spy="scroll" data-target="#page-scrollspy" data-offset="90">
+  
+    
+    
+
+    
+      
+
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
+
+      
+      <a class="navbar-brand" href="http://xiangyi.pro/">
+          
+        <strong> </strong>
+      </a>
+
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        
+        <ul class="navbar-nav mr-auto ">
+          <li class="nav-item ">
+            <a class="nav-link" href="http://xiangyi.pro/">Home</a>
+          </li>
+          
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+  
+ 
+      
+ 
+
+
+
+
+
+
+<div id="site-header" class="carousel slide carousel-fade" data-ride="carousel" style="height: 18rem;" >  
+
+  
+  
+  
+
+  
+  <div class="carousel-inner" role="listbox">
+    
+      
+
+        
+        <div class="carousel-item active">
+          <div class="view" style="background-image: url('http://xiangyi.pro/img/header-slides/raw_1515691746.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+              
+              
+              
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+      
+
+        
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('http://xiangyi.pro/img/header-slides//raw_1515847341.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+
+  
+  </div>
+  
+
+  
+  <div class="carousel-content text-center white-text wow fadeIn">
+    <div class="row mx-0 headfont mt-3 pt-4">
+      
+      <div class="col-12 col-sm-5 align-middle">
+        <a href="http://xiangyi.pro/">
+          
+        </a>
+      </div>
+      
+      <div class="col-12 col-sm-7 text-left pl-2">
+        <a href="http://xiangyi.pro/">
+          <h1 class="mb-2 h1" style="font-weight: 300;" >
+            <strong>Xiangyi&#39;s Blog</strong>
+          </h1>
+        </a>
+        
+
+             
+        <div class="mt-2" style="font-size: 1rem; color: white;">
+            
+            
+
+            
+
+            
+
+            
+
+            
+    
+            
+    
+        
+            
+    
+            
+
+            
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  
+  
+  
+
+</div>
+  
+    
+
+    
+  
+  <main class="post-main-wrapper">
+    
+    
+    <div class="row">
+
+      
+
+      
+      <div class="container pr-5">
+      
+
+        
+        <div class="z-depth-1  post-wrapper white-bg single-post">
+
+          <div class="post-header text-center" >
+  <ul class="post-meta li-x">
+    
+    
+  </ul>
+
+  <div class="px-4 post-heading">Config oh-my-posh on Windows 10</div>
+
+  <ul class="post-meta li-x mt-1">
+    
+      <li>Sep 8, 2020</li>
+    
+
+    
+      <li class="middot"></li>
+      <li>2 minutes read</li>
+    
+  </ul>
+  
+
+</div>
+
+
+          <div class="post-content markdown">
+            <p><a href="https://github.com/JanDeDobbeleer/oh-my-posh">oh-my-posh</a>, as an alternative of oh-my-zsh in *nix-based system, is a beautiful theme engine for Powershell in Windows Terminal.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ol>
+<li><a href="https://github.com/microsoft/terminal">Windows Terminal</a></li>
+<li><a href="https://git-scm.com/">Git</a></li>
+<li><a href="https://github.com/powerline/fonts">Powerline fonts</a> (at least one font is needed to be installed)</li>
+</ol>
+<h2 id="installation">Installation</h2>
+<p>Using the following commands to install the oh-my-posh in your Windows Terminal:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">Install-Module posh-git -Scope CurrentUser  
+Install-Module oh-my-posh -Scope CurrentUser
+</code></pre></div><p>Now the oh-my-posh is successfully installed on your computer, the following commands are used to enable the prompt:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">Set-ExecutionPolicy -ExecutionPolicy Bypass 
+<span style="color:#75715e"># This is a must unless you have already modified the Execuation Policy of the Powershell to a proper option </span>
+<span style="color:#75715e"># See https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7 for details</span>
+Set-prompt
+Set-theme Agnoster <span style="color:#75715e"># Optional, Agnoster is one of the fancy themes</span>
+</code></pre></div><p>Now the installation process is finished and if no error occurs, you will see the new prompt. Please visit <a href="https://github.com/JanDeDobbeleer/oh-my-posh">here</a> if you want to get some in-depth knowledge of it.</p>
+<h2 id="enable-at-startup">Enable at startup</h2>
+<p>If you want to use oh-my-posh when the Windows Terminal starts, you need to finish the following procedures:</p>
+<ol>
+<li>Open the Settings of the Windows Terminal by clicking the triangle on the top of the windows.</li>
+<li>Find the block with <strong>&ldquo;name&rdquo;: &ldquo;Windows PowerShell&rdquo;</strong> and change the value of property <strong>commandline</strong> as <strong>&ldquo;powershell.exe -NoExit -Command &amp; {Set-Theme Agnoster}&quot;</strong></li>
+<li>Add property <strong>fontFace</strong> with value which is the font name you want to use, for me, it is <strong>&ldquo;fontFace&rdquo;: &ldquo;Roboto Mono for Powerline&rdquo;</strong></li>
+<li>Restart the Windows Terminal to see what will happen!</li>
+</ol>
+
+          </div>
+
+          
+          <div class="row">
+            <div class="col-md-8">
+            
+            </div>
+            
+          </div>
+          
+
+          
+          <div class="row pt-3">
+            <div class="col-md-6">
+              
+            </div>
+            
+            <div class="col-md-6 text-right" >
+              
+                <a href=http://xiangyi.pro/posts/osi-7-layer-model/ class="post-meta">Next
+                  <div class="pt-2 pb-5 flex-reverse">
+                    <i class="fas fa-angle-right text-grey font-weight-bold ml-2 active-color"></i>
+                    <span>OSI 7-Layer Model</span>
+                  </div>
+                </a>
+              
+            </div>
+          </div>
+
+          
+
+        </div>
+        
+
+      </div>
+      
+
+      
+
+    </div>
+    
+
+
+  </main>
+  
+
+
+    
+    
+
+<footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+
+  
+  <div class="pb-2 mt-5 pt-5">
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+    
+
+  </div>
+  
+
+  
+  <div class="copyright py-4">
+    
+    <span>  2016 - 2020 &copy; | Theme <a href='https://github.com/orianna-zzo/AllinOne' target="_blank">AllinOne</a> by <a href='https://github.com/orianna-zzo' target="_blank">Orianna</a>  </span>
+  </div>
+  
+
+</footer>
+
+
+    
+
+
+
+
+
+
+<script type="text/javascript" src="http://xiangyi.pro/js/vendors/jquery/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="http://xiangyi.pro/js/vendors/jquery/jquery.smooth-scroll.min.js"></script>
+
+
+
+<script type="text/javascript" src="http://xiangyi.pro/js/vendors/popper.min.js"></script>
+<script type="text/javascript" src="http://xiangyi.pro/js/vendors/holder.min.js"></script>
+<script type="text/javascript" src="http://xiangyi.pro/js/vendors-extensions/bootstrap4/bootstrap.js" ></script>
+
+<script type="text/javascript" src="http://xiangyi.pro/js/vendors/mdb/mdb.min.js"></script>
+
+<script type="text/javascript" src="http://xiangyi.pro/js/main.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  
+  new WOW().init();
+</script>
+
+
+
+
+  </body>
+</html>
