@@ -1,7 +1,7 @@
 ---
 title: "OSI 7-Layer Model"
 date: 2020-09-10T10:29:19Z
-draft: true
+draft: false
 ---
 
 The Open System Interconnection (OSI) model (defined in [ISO 7498-1](https://www.iso.org/standard/20269.html)), which is a reference tool for understanding data communications between two networked systems, divides the communication processes into 7 layers:
